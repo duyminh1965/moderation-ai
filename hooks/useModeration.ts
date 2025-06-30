@@ -60,8 +60,11 @@ export const useModeration = () => {
   //const items = viewAllItems(process.env.DYNAMODB_TABLE!)
   useEffect(() => {
           const CallData = async () => {
+             console.log("Xem em oi1");
               const dataFirst = await viewAllItems();  
+            console.log("Xem em oi 2");
               setResults(dataFirst as any[]);            
+            console.log("Xem em oi 3");
               //alert("Xem: "+dataFirst[0].content)
               return dataFirst;
           };
