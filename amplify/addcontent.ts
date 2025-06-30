@@ -48,7 +48,7 @@ export const viewAllItems = async () => {
       const content =  e.key;
       //content.push({"name": e.key.S});
       const type = e.content_type;
-      console.log("e.moderation_results.labels:", e.moderation_results.labels)
+      //console.log("e.moderation_results.labels:", e.moderation_results.labels)
       const flags = assignFlags(e.moderation_results.labels);      
       const confidence = e.confidence_score*100;
       const status = determineStatus(confidence/100);
