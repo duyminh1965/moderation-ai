@@ -35,8 +35,10 @@ export const  addURL = async ( filename: string, contentType: string) => {
 }
 
 export const viewAllItems = async () => {
+        alert("Thong bao 1");
   const tableName="moderation-results";
         console.log("viewAllItems 1");
+        alert("Thong bao 2");
   const command = new ScanCommand({ TableName: tableName });
         console.log("viewAllItems 2");
   const response = await dynamoClient.send(command);  
