@@ -34,11 +34,10 @@ export const  addURL = async ( filename: string, contentType: string) => {
   }
 }
 
-export const viewAllItems = async () => {
-        alert("Thong bao 1");
+export const viewAllItems = async () => {        
+        console.log("viewAllItems 0");
   const tableName="moderation-results";
-        console.log("viewAllItems 1");
-        alert("Thong bao 2");
+        console.log("viewAllItems 1");        
   const command = new ScanCommand({ TableName: process.env.DYNAMODB_TABLE! });
         console.log("viewAllItems 2");
   const response = await dynamoClient.send(command);  
