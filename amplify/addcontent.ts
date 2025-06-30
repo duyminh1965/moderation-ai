@@ -35,7 +35,7 @@ export const  addURL = async ( filename: string, contentType: string) => {
 }
 
 export const viewAllItems = async () => {
-  const tableName="moderation-results"
+  const tableName="moderation-results";
   const command = new ScanCommand({ TableName: tableName });
   const response = await dynamoClient.send(command);  
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
