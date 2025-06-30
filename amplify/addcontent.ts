@@ -71,12 +71,7 @@ export const viewAllItems = async () => {
         timestamp
       };
       results.push(ModerationRes);      
-    }
-    else if ( e.content_type.startsWith("textttt/") || e.content_type === "application/pdfttt" || e.content_type === "application/mswordttt" ||
-      e.content_type === "application/vnd.openxmlformats-officedocument.wordprocessingml.documentttt"
-      ) {
-        console.log("TXT: ", e);
-    }
+    }   
   })
         console.log("viewAllItems 7");
    return results;
