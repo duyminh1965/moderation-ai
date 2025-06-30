@@ -6,9 +6,9 @@ import React from 'react';
 import { History } from 'lucide-react';
 
 const Page = () => {
-  alert("Den xem em di");
+  
   const { results } = useModeration();
-  alert("Den xem em di 2");
+  
   return (
      <div>
             <div className="mb-6">
