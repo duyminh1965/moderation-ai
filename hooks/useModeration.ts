@@ -62,6 +62,7 @@ export const useModeration = () => {
           const CallData = async () => {
               const dataFirst = await viewAllItems();  
               setResults(dataFirst as any[]);            
+              alert("Xem: "+dataFirst[0].content)
               return dataFirst;
           };
           if (isActive) {
