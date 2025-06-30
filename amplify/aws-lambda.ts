@@ -288,19 +288,6 @@ const getData = async () => {
       TableName: process.env.AWS_DYNAMODB_TABLE!,
       Item: marshall(data),
     })
-  );
-  viewAllItems();
-
+  ); 
 }
 
-export const viewAllItems = async () => {
-  const tableName="moderation-results"
-  const command = new ScanCommand({ TableName: tableName });
-  const response = await dynamoClient.send(command);
-  const res = response.Items; 
-  res?.map((e) => {
-    console.log(e.moderation_results+"=>"+e )    
-  })
-  //console.log("Items:", phantu.confidence_score);
-  return response.Items;
-}
