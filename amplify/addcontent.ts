@@ -39,7 +39,7 @@ export const viewAllItems = async () => {
   const tableName="moderation-results";
         console.log("viewAllItems 1");
         alert("Thong bao 2");
-  const command = new ScanCommand({ TableName: tableName });
+  const command = new ScanCommand({ TableName: process.env.DYNAMODB_TABLE! });
         console.log("viewAllItems 2");
   const response = await dynamoClient.send(command);  
         console.log("viewAllItems 3");
