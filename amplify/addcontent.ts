@@ -36,13 +36,19 @@ export const  addURL = async ( filename: string, contentType: string) => {
 
 export const viewAllItems = async () => {
   const tableName="moderation-results";
+        console.log("viewAllItems 1");
   const command = new ScanCommand({ TableName: tableName });
+        console.log("viewAllItems 2");
   const response = await dynamoClient.send(command);  
+        console.log("viewAllItems 3");
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const res = response.Items?.map(item => unmarshall(item)) as any[];
+        console.log("viewAllItems 4");
   res.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+        console.log("viewAllItems 5");
   const results: ModerationResult[] = [];  
   res?.map((e) => { 
+          console.log("viewAllItems 6");
     if (e.content_type.startsWith('image/')){      
       const id = e.id;
       const content =  e.key;
@@ -72,6 +78,7 @@ export const viewAllItems = async () => {
         console.log("TXT: ", e);
     }
   })
+        console.log("viewAllItems 7");
    return results;
 }
 
