@@ -1,0 +1,5 @@
+# Minimal requirements.txt
+boto3
+requests
+aws-lambda-powertools
+#pip install -r requirements.txt -t ./lambda_functions/

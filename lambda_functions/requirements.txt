@@ -1,0 +1,61 @@
+# AWS SDK for Python
+boto3
+botocore
+
+# JSON handling and utilities
+requests
+urllib3
+
+# Date and time utilities
+python-dateutil
+
+# AWS Lambda Powertools (optional but recommended)
+aws-lambda-powertools
+
+# JSON Web Token handling (if needed for authentication)
+PyJWT
+
+# Image processing (if additional image processing needed)
+Pillow
+
+# Text processing utilities
+nltk
+
+# Logging and monitoring
+structlog
+
+# Data validation
+pydantic
+
+# Environment variable management
+python-dotenv
+
+# HTTP client for external API calls
+httpx
+
+# UUID generation (built-in but listed for clarity)
+uuid
+
+# Base64 encoding/decoding utilities
+base64
+
+# JSON processing (built-in but listed for clarity)
+json
+
+# Regular expressions (built-in)
+re
+
+# Operating system interface (built-in)
+os
+
+# Mathematical functions (built-in)
+math
+
+# Time-related functions (built-in)
+time
+
+# Collections utilities (built-in)
+collections
+
+# Typing support (built-in in Python 3.5+)
+typing
